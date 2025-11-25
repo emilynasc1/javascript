@@ -1,15 +1,13 @@
-let anoNascimento = parseInt(prompt("Digite o ano de nascimento:"))
+let numero = 1
+let soma = 0
 
-//let anoatual = 2025
-let anoAtual = new Date().getFullYear()
+while(numero <= 100){
+    soma = soma + numero
+    //soma += numero
 
-let idade = anoAtual - anoNascimento
-
-if(idade >= 18){
-   console.log("Maior de idade")
-   console.log("Sua idade é " + idade)
+    console.log(soma)
+    // numero = numero + 1
+    numero++
 }
-else{
-    console.log("Menor de idade")
-    console.log("Sua idade é: " + idade)
-}
+
+console.log("A soma dos números de 1 a 100 é: " + soma)

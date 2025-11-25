@@ -1,7 +1,5 @@
-let numero = parseInt(prompt("Informe um número inteiro:"))
+let numero = parseInt(prompt("Digite um número "))
 
-if(numero%2 == 0){
-    console.log("O Número é Par")
-}else{
-    console.log("O Número é Impar")
+for(let tabuada = 1; tabuada <=10; tabuada++){
+    console.log(numero + " X " + tabuada + " = " + (numero*tabuada))
 }

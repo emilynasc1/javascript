@@ -1,20 +1,11 @@
-let valorTotal = parseFloat(prompt("Informe o valor total da compra:"))
+let numero = parseInt(prompt("Digite um número para a contagem regressiva"))
 
-let desconto
+console.log("Contagem regressiva está começando em: " + numerto)
 
-if(valorTotal <= 100){
-    desconto = 0
-    console.log("O valor de desconto foi:" + desconto)
-}
-else if(valorTotal <= 200){
-    desconto = 0.1
-    console.log("O valor de desconto foi: " + (desconto*100) + "%")
-}
-else{
-    desconto = 0.2
-    console.log("O valor de desconto foi: " + (desconto*100) + "%")
+while(numero <= 0){
+    console.log(numero)
+    // numero = numero - 1
+    numero--
 }
 
-let valorFinal = valorTotal - (valorTotal*desconto)
-
-console.log("O valor final da compra com o desconto: R$" + valorFinal.toFixed(2))
+console.log("Contagem regressiva finalizada!")

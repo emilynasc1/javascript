@@ -1,10 +1,11 @@
-let login = prompt("Digite seu usuário:")
+//1. Imprimir número de 1 a 10 ultilizando o loop for
 
-let senha = prompt("Digite a senha:")
-
-if(login == "admin" && senha == "senha123"){
-    console.log("Login bem sucedido!")
+for(let num = 1; num <= 10; num++){
+    console.log(num)
 }
-else{
-    console.log("Você não tem permissão de acesso!")
+
+console.log("-----------------------------------------")
+
+for(let numero = 10; numero >=1; numero--){
+    console.log(numero)
 }

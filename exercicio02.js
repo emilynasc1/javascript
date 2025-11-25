@@ -1,35 +1,15 @@
-let dia_semana = prompt("Informe um número de 1 a 7:")
+// 2. Impeimie números pares de 1 a 10.
 
-switch (dia_semana) {
-    case "1":
-        console.log("Segunda-feira")
-        break;
+for(let num = 2; num <=10; num+=2){
+    console.log(num)
+}
 
-    case "2":
-        console.log("Terça-feira")
-        break;
-    
-    case "3":
-        console.log("Quarta-feira")
-        break;
-    
-        case "4":
-            console.log("Quinta-feira")
-            break;
+console.log("-----------------")
 
-    case "5":
-        console.log("Sexta-feira")
-        break;
-
-    case "6":
-        console.log("Sábado")
-        break;
-    
-    case "7":
-        console.log("Domingo")
-        break;
-
-    default:
-        console.log("Não é um número de 1 a 7")
-        break;
+for(let cont = 1; cont <=10; cont++){
+    if(cont%2 == 0){
+        console.log("Esse número é Par: "+cont)
+    }else{
+        console.log("Esse número é Impar "+cont)
+    }
 }

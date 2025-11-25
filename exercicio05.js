@@ -1,10 +1,12 @@
-let numero01 = parseInt(prompt("Digite o primeiro número:"))
-let numero02 = parseInt(prompt("Digite o segundo número:"))
-let numero03 = parseInt(prompt("Digite o terceiro número:"))
+let num = 0
 
-if(numero01 < numero02 && numero02 < numero03){
-    console.log("Os números estão em ordem crescente!")
-}
-else{
-    console.log("Os númeos Não estão em ordem crescente!")
+console.log("Números pares de 0 a 20: ")
+
+while(num <= 20){
+    if(num%2 == 0){
+        console.log(num)
+    }
+
+    // num = num + 1
+    num++
 }

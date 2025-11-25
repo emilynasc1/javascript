@@ -1,57 +1,50 @@
-// //Alert - Apresenta uma mensagem na tela
-// window.alert("Olá Turma do Borges")
-// //Confirm - Pergunta com ok/ cancela (Retorna um True ou false)
-// window.confirm("O Jonas vai Casar")
-// //prompt - Pega o texto da tela
-// window.prompt("Qual o seu nome?")
+//For - loop contato
 
-//Comentario em linha
-/*
-Comentario em texto
-*/
+//Contador do 0 ao 10
+//for(inicializador; condicação; contador)
 
-// console.log("Multimidia")
+//for(let num = 0; num <= 10; num++){
+// console.log("Eu vim Barganhar " + num)
+//}
 
-// let nome = prompt("Informe o seu nome")
+//while - loop condicional
+// let salario = 1000
 
-// console.log("Bem vindo!" +nome)
+// while(salario < 5000){
+//     //salario = 100 + salario
+//     salario += 100
 
-// let numero1 = Number.parseInt(prompt("Digite o primeiro número: "))
-// let numero2 = Number.parseInt(prompt("Digite o segundo número"))
+//     console.log("0 salário é de R$: " + salario)
+// }
 
-// let resultado = numero1 + numero2
+// //Do While - loop condicional
+// let aumento = 1000
 
+// do{
 
+//     console.log("Esse é o seu saldo: " + aumento)
+//     aumento += 100
+//     //aumento = 100 + aumento
 
-// console.log(resultado)
-
-// let numero1 = Number.parseFloat(prompt("Digite o primeiro número: "))
-// let numero2 = Number.parseFloat(prompt("Digite o segundo número"))
-
-// let resultado = numero1 + numero2
+// }while (aumento < 5000)
 
 
-// console.log(resultado)
+//Arry
+let fruta = ["Banana", "Laranja", "Maça", "Pitaya", "Melancia", "Uva"]
 
+// console.log(fruta [3])
+// console.log(fruta[5])
 
-let idade = window.prompt("Qual sua idade?")
+//forEach => percorre uma lista
+frutas.forEach(morango => {
+    console.log("A fruta é: " + morango)
+})
 
-if(idade >= 18){
-    console.log("Maior de Idade! Dalheee")
-}else{
-    console.log("Você é menor de idade!")
-}
+//Percorrer uma lista
+for (let indice = 0; indice < frutas.length; indice++){
+    console.log(frutas[indice])
 
-switch (idade) {
-    case "18":
-        console.log("Maior de Idade!")
-        break;
-
-    case "27":
-        console.log("Esta perto do 30!")
-        break;
-
-    default:
-        console.log("Nada a dizer")
-        break;
+    if(frutas[indice] == "Uva"){
+        console.log("Eu gosto de " + frutas[indice])
+    }
 }
